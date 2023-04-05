@@ -1,0 +1,54 @@
+/* 导航栏样式 */
+.navbar {
+	background-color: #2275c0;
+	overflow: hidden;
+}
+
+/* 搜索框样式 */
+.search-bar {
+	float: left;
+	padding: 14px;
+}
+
+.search-bar input[type=text] {
+	padding: 6px;
+	margin-top: 8px;
+	margin-bottom: 8px;
+	border: none;
+	font-size: 17px;
+}
+
+.search-bar button {
+	margin-top: 8px;
+	margin-bottom: 8px;
+	background-color: #4CAF50;
+	color: white;
+	border: none;
+	cursor: pointer;
+}
+
+/* 標題 */
+.title {
+    float: center;
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+/* 登录按钮样式 */
+.login-button {
+	float: right;
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+/* 主要内容样式 */
+.content {
+	padding: 20px;
+}
+
