@@ -1,0 +1,34 @@
+{% load static %}
+<!DOCTYPE html>
+	<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Document</title>
+		<link type="text/css" rel="stylesheet" href="{% static 'css/signUp.css' %}">
+	</head>
+	<body>
+        <div class="container">
+			<div class="container--image">
+				<img src="{% static 'images/signup.png' %}" alt="">
+				<div class="Sign--in">Already have an account?<a href="/index/log-in/" class="Sign--in-link">Sign In</a></div>
+			</div>
+			<div class="signup--form">
+				<div class="signup--form-layout">
+					<div class="from--title">Sign Up</div>
+					<div class="note">To use our platform, please sign up.</div>
+					<div class="form--field">
+						<div class="form--field-layout"><span>First Name</span><input type="text" name="firstName" class="form--field-container"></div>
+						<div class="form--field-layout"><span>Last Name</span><input type="text" name="lastName" class="form--field-container"></div>
+					</div>
+					<div class="form--field-layout"><span>Email Address</span><input type="text" name="email" class="form--field-container"></div>
+					<div class="form--field-layout"><span>Password</span><input type="password" name="password" class="form--field-container"></div>
+					<button type="submit" class="button--button">Sign Up</button>
+					<div class="Use--Terms">By signing up, you agree with our <a href="#" class="Use--Terms-link">Terms of Use</a></div>
+				</div>
+			</div>
+        </div>
+		<script src="{% static 'js/signUp.js' %}"></script>
+	</body>
+</html>

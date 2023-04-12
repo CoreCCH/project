@@ -22,7 +22,7 @@
 					<img src="{% static 'images/magnifier-svgrepo-com.png' %}" alt="" style="width: 20px; height: 20px; padding-top: 5px;">
 				</button>
 				<button class="nav-btn">
-					<img src="{% static 'images/apps-svgrepo-com.png' %}" alt="" style="width: 20px; height: 20px; padding-top: 5px;">
+					<img src="{% static 'images/apps-svgrepo-com.png' %}" alt="" style="width: 20px; height: 20px; padding-top: 5px;margin: auto;">
 				</button>
 				<a href="#" class="question">
 					<img src="{% static 'images/question-circle-svgrepo-com.png' %}" alt="" style="width: 20px; height: 20px;">
@@ -34,22 +34,41 @@
 
 			</div>
 		</nav>
-
-		<div class="login-container">
-			<form action="" method="post">
-				{% csrf_token %}
-				<div>
-					<label for="username">Username:</label>
-					<input type="text" id="username" name="username" required>
+		<main id = "content-wrapper">
+			<div id = "content">
+				<div id="login-form" class="form -bordered">
+					<h1>登入</h1>
+					<hr class="form--separate">
+					<div class="form--field">
+						<label class="form--label" for="username">使用者名稱*</label>
+						<input type="text" name="username" class="form--field-container">
+					</div>
+					<div class="form--field">
+						<label class="form--label" for="password">密碼*</label>
+						<input type="password" name="password" class="form--field-container">
+					</div>
+					<button type="submit" class="button--button">登入</button>
+					<div class="login-options-container">
+						<div class="link--field">
+							<a class="link--field-container" href="#">忘記密碼</a>
+							<a class="link--field-container" href="#">建立新帳號</a>
+						</div>
+					</div>
+		
+					{% comment %} 
+					
+					</div>
+					<div class="input-group">
+					<label for="password">密碼*</label>
+					<input type="password" id="password" name="password">
+					</div>
+					<button type="submit">登入</button>
+					<a href="#">忘記密碼</a>
+					<a href="#">建立新帳號</a> {% endcomment %}
 				</div>
-				<div>
-					<label for="password">Password:</label>
-					<input type="password" id="password" name="password" required>
-				</div>
-				<button type="submit">Login</button>
-			</form>
-		</div>
+			</div>
+		</main>
 
 		<script src="{% static 'js/logInPage.js' %}"></script>
 	</body>
-	</html>
+</html>

@@ -1,0 +1,28 @@
+{% load static %}
+<!DOCTYPE html>
+	<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Document</title>
+		<link type="text/css" rel="stylesheet" href="{% static 'css/logIn.css' %}">
+	</head>
+	<body>
+        <div class="container">
+			<div class="login--form">
+				<div class="login--form-layout">
+					<div class="from--title">Sign In</div>
+					<div class="form--field-layout"><span>Email Address</span><input type="text" name="email" class="form--field-container"></div>
+					<div class="form--field-layout"><span>Password</span><input type="password" name="password" class="form--field-container"></div>
+					<button type="submit" class="button--button">Sign Up</button>
+					<div class="link--field">
+						<a class="Forget--pw-link" href="#">Forget Password?</a>
+						<div class="Sign--up">Don't have account?<a class="Sign--up-link" href="/index/sign-up/">Sign Up</a>
+					</div>
+				</div>
+			</div>
+        </div>
+		<script src="{% static 'js/logIn.js' %}"></script>
+	</body>
+</html>
