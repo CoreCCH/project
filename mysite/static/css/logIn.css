@@ -30,6 +30,7 @@ body {
     margin: auto;
     align-items: center;
     min-width: 400px;
+    min-height: 500px;
 }
 
 .container {
@@ -89,7 +90,7 @@ span {
 .button--button {
     width: 85%;
     color: #FFFFFF;
-    background-color: #4c6092;
+    background-color: #2E437C;
     border: none;
     font-size: 1.2rem;
     padding: 1rem;
@@ -98,7 +99,7 @@ span {
 }
 
 .button--button:hover {
-    background-color: #2E437C;
+    background-color: #566999;
 }
 
 .Use--Terms {
@@ -111,13 +112,13 @@ span {
 }
 
 .Sign--up {
-    font-size: 1.2rem;
+    font-size: 1rem;
     text-align: center;
     color: #A5B6D3;
 }
 
 .Sign--up-link {
-    font-size: 1.2rem;
+    font-size: 1rem;
     color: #2E437C;
     text-decoration: none;
     padding-left: 10px;
@@ -131,11 +132,15 @@ span {
 }
 
 .Forget--pw-link {
-    font-size: 1.2rem;
+    font-size: 1rem;
     color: #2E437C;
     text-decoration: none;
     padding-left: 10px;
     flex-grow: 0;
     flex-shrink: 0;
     text-align: center;
+}
+
+.Forget--pw-link:hover {
+    color: #566999;
 }
